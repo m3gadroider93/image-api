@@ -14,11 +14,12 @@ An API that allows any user to upload an image in PNG or JPG format and create t
 ## Service
 Service running on: http://0.0.0.0:8000
 
-Log into admin http://0.0.0.0:8000/admin  
+Log into admin http://0.0.0.0:8000/admin
+
 Create a UserPlan and assign admin to any plan to test
 
 ## Running Tests
-Run tests via - `docker exec disco_image_hosting_web_run_1 python manage.py test`
+Run tests via - `docker exec api_web_run_1 python manage.py test`
 
 ## Endpoints
 Fetch image list:
