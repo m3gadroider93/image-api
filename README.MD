@@ -5,9 +5,9 @@ An API that allows any user to upload an image in PNG or JPG format and create t
 
 `docker-compose up -d`
 
-`docker exec disco_image_hosting_web_run_1 python manage.py loaddata plans.json` - loads intial plans
+`docker exec image-api_web_run_1 python manage.py loaddata plans.json` - loads intial plans
 
-`docker exec -it disco_image_hosting_web_run_1 bash`
+`docker exec -it image-api_web_run_1 bash`
 
 `python manage.py createsuperuser` - create your superuser account
 
