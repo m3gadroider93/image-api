@@ -19,7 +19,7 @@ Log into admin http://0.0.0.0:8000/admin
 Create a UserPlan and assign admin to any plan to test
 
 ## Running Tests
-Run tests via - `docker exec api_web_run_1 python manage.py test`
+Run tests via - `docker exec image-api_web_run_1 python manage.py test`
 
 ## Endpoints
 Fetch image list:
