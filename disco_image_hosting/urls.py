@@ -19,9 +19,14 @@ from django.urls import path
 from disco_image_api.views import ImageCreateView, ImageExpiryView, ImageListView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/images/', ImageListView.as_view({'get': 'list'}), name='image-list'),
-    path('api/image/', ImageCreateView.as_view({'post':'create'}), name='image-create'),
-    path('api/image/expiry/<int:pk>', ImageExpiryView.as_view({'put': "update",'get': 'retrieve'}), name='image-expiry'),
-
+    path("admin/", admin.site.urls),
+    path("api/images/", ImageListView.as_view({"get": "list"}), name="image-list"),
+    path(
+        "api/image/", ImageCreateView.as_view({"post": "create"}), name="image-create"
+    ),
+    path(
+        "api/image/expiry/<int:pk>",
+        ImageExpiryView.as_view({"put": "update", "get": "retrieve"}),
+        name="image-expiry",
+    ),
 ]
